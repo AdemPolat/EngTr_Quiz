@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#041029"
+    tools:context=".Adjective_EngTr">
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/marko_one"
+        android:gravity="center"
+        android:text="Ses"
+        android:textColor="#d81b60"
+        app:layout_constraintEnd_toStartOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp"
+        android:checked="true"
+        android:fontFamily="@font/marko_one"
+        android:textColor="#D81B60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/timebutton"
+        android:layout_width="66dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/time"
+        android:text="15"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textSoru"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Soru Sayısı 1/100"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timebutton" />
+
+    <TextView
+        android:id="@+id/iv_country"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bluebutton"
+        android:fontFamily="@font/marko_one"
+        android:gravity="center|center_vertical"
+        android:shadowColor="@color/colorAccent"
+        android:text="What is question?"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/b_answer4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSoru"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/b_answer1"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/blueoption"
+        android:cursorVisible="false"
+        android:fontFamily="@font/marko_one"
+        android:longClickable="false"
+        android:onClick="answer1"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/resultButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/b_answer2"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/blueoption"
+        android:cursorVisible="false"
+        android:fontFamily="@font/marko_one"
+        android:longClickable="false"
+        android:onClick="answer2"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/b_answer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/b_answer3"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/blueoption"
+        android:cursorVisible="false"
+        android:fontFamily="@font/marko_one"
+        android:longClickable="false"
+        android:onClick="answer3"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/resultButton"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/b_answer4"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/blueoption"
+        android:fontFamily="@font/marko_one"
+        android:onClick="answer4"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/b_answer3"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/sounds2"
+        android:onClick="sound"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_country" />
+
+    <Button
+        android:id="@+id/resultButton"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bluebutton"
+        android:fontFamily="serif"
+        android:text=" DOĞRU 0   YANLIŞ 0"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textShowWord"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:fontFamily="serif"
+        android:onClick="showWord"
+        android:text="Kelimeyi Göster"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_country"
+        app:layout_constraintEnd_toEndOf="@+id/iv_country"
+        app:layout_constraintStart_toStartOf="@+id/iv_country"
+        app:layout_constraintTop_toTopOf="@+id/iv_country" />
+
+    <TextView
+        android:id="@+id/textHideWord"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:onClick="hideWord"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_country"
+        app:layout_constraintEnd_toEndOf="@+id/iv_country"
+        app:layout_constraintStart_toStartOf="@+id/iv_country"
+        app:layout_constraintTop_toTopOf="@+id/iv_country" />
+
+    <TextView
+        android:id="@+id/textHigh1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#fff"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="312dp" />
+
+    <TextView
+        android:id="@+id/textHigh2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#fff"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/textHigh1"
+        tools:layout_editor_absoluteX="312dp" />
+
+    <TextView
+        android:id="@+id/textHigh3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#fff"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/textHigh2"
+        tools:layout_editor_absoluteX="312dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
